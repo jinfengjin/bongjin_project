@@ -6,7 +6,7 @@
           <img class="logo" src="/static/images/logo.png">
           <div class="tagline">Open source task management tool</div>
         </div>
-        <form @submit.prevent="submitForm">
+        <form @submit="submitForm">
           <div v-show="errorMessage" class="alert alert-danger failed">{{ errorMessage }}</div>
           <div class="form-group">
             <label for="username">Username</label>
@@ -92,6 +92,7 @@ export default {
   },
   methods: {
     submitForm () {
+      debugger;
       this.$v.$touch()
       if (this.$v.$invalid) {
         return
