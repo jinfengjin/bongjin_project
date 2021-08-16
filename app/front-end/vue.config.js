@@ -14,5 +14,6 @@ module.exports = {
         'bootstrap/dist/css/bootstrap.min.css'
       ]
     }
-  }
+  },
+  lintOnSave: false
 }
