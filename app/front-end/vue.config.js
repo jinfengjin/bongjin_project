@@ -1,7 +1,4 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ],
   devServer: {
     port: 3000,
     proxy: {
@@ -10,5 +7,12 @@ module.exports = {
       }
     }
   },
-  lintOnSave: false
+  configureWebpack: {
+    entry: {
+      app: './src/main.js',
+      style: [
+        'bootstrap/dist/css/bootstrap.min.css'
+      ]
+    }
+  }
 }

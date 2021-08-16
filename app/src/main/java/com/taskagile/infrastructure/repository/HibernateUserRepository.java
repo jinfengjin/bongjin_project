@@ -15,10 +15,10 @@ public class HibernateUserRepository extends HibernateSupport implements UserRep
   }
 
   @Override
-    public User findByUsername(String username) {
-      Query<User> query = getSession().createQuery("from User where username = :username", User.class);
-      query.setParameter("username", username);
-      return query.uniqueResult();
+  public User findByUsername(String username) {
+    Query<User> query = getSession().createQuery("from User where username = :username", User.class);
+    query.setParameter("username", username);
+    return query.uniqueResult();
   }
 
   @Override

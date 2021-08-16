@@ -19,7 +19,6 @@ public class RegistrationManagement {
 
   public User register(String username, String emailAddress, String password)
     throws RegistrationException {
-
     User existingUser = repository.findByUsername(username);
     if (existingUser != null) {
       throw new UsernameExistsException();
