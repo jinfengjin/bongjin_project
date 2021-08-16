@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})//DB 설정이 안되어있을 때
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})//DB 설정이 안되어있을 때
 public class TaskAgileApplication {
 
   public static void main(String[] args) {
